@@ -1,6 +1,7 @@
 html,
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Apple Chancery", cursive;
+    color: #195941;
 }
 
 .section {
@@ -12,7 +13,7 @@ body {
 }
 
 .next a {
-    color: rgb(33, 37, 41);
+    color: rgb(34, 129, 224);
 }
 
 .arrow-next {
@@ -24,7 +25,7 @@ body {
 }
 
 .nav-item:hover {
-    background-color: var(--bs-primary-dark)
+    background-color: #D95A65
 }
 
 .language-wrapper img,
@@ -40,13 +41,13 @@ body {
 }
 
 .class-card {
-    background-color: #eeeeee;
-    color: black;
+    background-color: #D9C042;
+    color: rgb(255, 255, 255);
     transition-property: all;
     transition-duration: 0.3s;
 }
 
 .class-card:hover {
     background-color: var(--bs-primary);
-    color: white;
+    color: #E5D6FD;
 }

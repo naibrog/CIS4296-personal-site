@@ -25,29 +25,19 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+   
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title> Nailah is the best</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+
+   
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top" id="help">
       <div class="container-fluid p-2 px-lg-2 py-lg-0">
         <!-- Set Name Here -->
         <a class="navbar-brand" href="#"></a>
@@ -95,17 +85,18 @@
       >
       <!-- Set Photo Here -->
         <img
-          style="height: 150px; width: 150px"
+          style="height: 375px; width: 200px"
           class="rounded-circle"
           draggable="false"
           id="profilepic"
+          src="images/me.jpeg"
         />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          Hi <iconify-icon icon="noto:sparkling-heart"></iconify-icon> I'm 
+          <span id="name">Nailah</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -189,6 +180,114 @@
           />
         </div>
       </div>
+      <div class="row mt-3 mt-lg-5 next">
+        <a href="#aboutme" class="col"
+          ><iconify-icon
+            icon="material-symbols:arrow-circle-down"
+            class="arrow-next"
+          ></iconify-icon
+        ></a>
+      </div>
+    </div>
+    <div
+      class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
+      id="aboutme"
+    >
+      <div class="row mx-auto">
+        <h4 class="h1 font-weight-bold mx-auto text-center">About Me</h4>
+      </div>
+      <div class="row mx-auto">
+        <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
+          I'm Living a Pretty Cool Life.
+        </h5>
+      </div>
+      <div class="row w-100">
+        <h5>Mother</h5>
+      </div>
+      <div class="row w-100 mb-4">
+        <p class="text-justify">
+          Everything I do is for my daughter. 
+          It has always been that way even when she was just a figment of my imagination.
+          Having the prize on her happiness is the catalyst 
+        </p>
+      </div>
+      <div class="row w-100">
+        <h5>United States Army Veteran</h5>
+      </div>
+      <div class="row w-100 mb-4">
+        <p class="text-justify">
+          Inspired by my dad and many family memberws who came before me 
+          to join the military, I decided to undergo training as a military intelligence analyst.
+          
+        </p>
+      </div>
+      <!---->
+      <div id="carouselExampleAutoplaying" class="carousel slide col-lg-3 col-xs-2 col-sm-3 col-md-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/IMG_7106.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/IMG_5597.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/IMG_5618.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/IMG_5956.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/IMG_5985.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/IMG_6095.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/IMG_6721.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/IMG_6721.jpg" class="d-block w-100" alt="...">
+          </div>
+
+        
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> <br/>
+<!---->
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  View my Off Canvas tab
+</a>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">hey!</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      What's up guys
+
+      
+    </div>
+    
+  </div>
+</div>
+<!---->
+
+
+
 
       <div class="row mt-3 mt-lg-5 next">
         <a href="#projects" class="col"

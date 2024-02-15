@@ -1,8 +1,8 @@
 :root {
-    --temple-red-dark: rgb(136, 24, 45);
-    --bs-primary: #88182d;
+    --temple-red-dark: #E6D6FD;
+    --bs-primary: #D95A65;
     --bs-primary-rgb: 158, 27, 52;
-    --bs-primary-dark: #721426;
+    --bs-primary-dark: #195941;
     --bs-primary-dark-rgb: 136, 24, 35;
 
 }
@@ -25,25 +25,25 @@
 }
 
 .navbar {
-    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-active-color: rgba(var(--bs-danger-bg-subtle), 1);
     --bs-navbar-padding-x: 0.1rem;
     --bs-navbar-padding-y: 0;
-    --bs-navbar-brand-color: white;
-    --bs-navbar-brand-hover-color: white;
+    --bs-navbar-brand-color: #195941;
+    --bs-navbar-brand-hover-color: #195941;
 }
 
 
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 1rem;
-    --bs-nav-link-color: white;
-    --bs-nav-link-hover-color: white;
+    --bs-nav-link-color: #195941;
+    --bs-nav-link-hover-color: #195941;
 
 }
 
 .navbar-nav {
-    --bs-nav-link-color: white;
-    --bs-nav-link-hover-color: white;
+    --bs-nav-link-color: w#195941hite;
+    --bs-nav-link-hover-color: #195941;
 }
 
 /* .btn-primary {
